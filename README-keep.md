@@ -4,10 +4,13 @@ This image is used to display the PhysiCell Studio (a PyQt5/X11 GUI) from other 
 ## Usage
 First, build the two required images, e.g.:
 ```
-docker run --rm -it -p 8080:8080 theasp/novnc    # or build from its Dockerfile
-docker build -t pcstudio-novnc .     # using the Dockerfile here
+docker build -t pcstudio-novnc .  # in its own repo
 ```
 
+and
+```
+docker build -t theasp/novnc .    # using the Dockerfile in this repo
+```
 then run:
 ```
 docker compose up    # -d
